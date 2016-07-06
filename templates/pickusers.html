@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 
+<html lang="en" class="ie8 no-js">
+   <![endif]-->
+   <!--[if IE 9]> 
+   <html lang="en" class="ie9 no-js">
+      <![endif]-->
+      <!--[if !IE]><!--> 
+      <html lang="en" class="no-js">
+         <!--<![endif]-->
+         <!-- BEGIN HEAD -->
+         <head>
+            <title>Invite friends to your event</title>
+            <script src="http://cdn.kik.com/kik/2.3.6/kik.js"></script>     
+            <script>
+              
+                  // function hello(){
+                  //     kik.pickUsers(function (users) {
+                  //       if (!users) {
+                  //           // action was cancelled by user
+                  //       } else {
+                  //           var usernames = [];
+                  //           users.forEach(function (user) {
+                  //               // kik.send(user.username, {
+                  //               //     title : 'Hello From TwerkBabes',
+                  //               //     text : 'thank you for messaging TwerkBabes. Your daily source of Twerkers'
+                  //               // });
+                  //           kik.send({
+                  //                   title : 'Hello From TwerkBabes',
+                  //                   text : 'thank you for messaging TwerkBabes. Your daily source of Twerkers'
+                  //               });
+                  //           });
+                  //       window.close();
+                  //       }
+                  //   });
+                  //  }
+                    function hello(){
+					 if (kik.message) {
+						alert("Hi");
+					}
+					else
+					{
+                      kik.send({
+                          title : 'Hello From DailySmokeShows',
+                          text : 'Please share with your friends'
+                          //pic:'http://www.smashermag.com/daily-smokeshows/',
+                          //noForward : false
+                      });
+					 }
+                      // window.close();
+                   }
+               
+            
+            </script>
+         </head>
+         <!-- END HEAD -->
+         <!-- BEGIN BODY -->
+         <body onload="hello();">
+            <!-- <button type="button" onclick="hello();">Click Me!</button> -->
+
+            <!-- END JAVASCRIPTS -->
+         </body>
+         <!-- END BODY -->
+      </html>
